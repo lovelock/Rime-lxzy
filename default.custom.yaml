@@ -38,6 +38,6 @@ patch:
       "|": "·"}
   schema_list:
     - {schema: zhuiyue}
-    - {schema: wubi86_qq}
+    # - {schema: wubi86_qq}
   switcher:
     hotkeys: ["Control+grave"]

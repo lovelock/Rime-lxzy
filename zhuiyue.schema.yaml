@@ -199,7 +199,7 @@ key_binder:
     - { when: has_menu, accept: Control+h, send: Left } # 向左移动光标到前1个字位置
     - { when: has_menu, accept: Control+j, send: Down } # 竖排候选词模式，移动到下一个候选词
     - { when: has_menu, accept: Control+k, send: Up } # 竖排候选词模式，移动到上一个候选词
-    - { when: has_menu, accept: Control+l, send_sequence:  "{Right}{Right}" } # 向右移动光标到后1个字位置
+    - { when: has_menu, accept: Control+l, send_sequence:  "{Right}" } # 向右移动光标到后1个字位置
     # 手机上按Shift+Delete键不方便，用X键长按得到的"Control+x"来删除候选字
     - { when: has_menu, accept: Control+x, send: Shift+Delete }
 
@@ -209,7 +209,7 @@ recognizer:
     reverse_lookup: "[a-z`]*`+[a-z`]*"
 
 menu:
-  page_size: 9 #候选项数
+  page_size: 5 #候选项数
   
 style:
   horizontal: false       # 使用竖排以适应英文输入中文释义显示要求
